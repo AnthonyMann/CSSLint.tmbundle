@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env node
+var env = process.env || process.ENV,
+    CSSLINT = require(env.TM_BUNDLE_SUPPORT + '/csslint-tm');
+
+CSSLINT();</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^V</string>
+	<key>name</key>
+	<string>Hint</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>uuid</key>
+	<string>E6832269-5952-47DE-A1FF-1F367165EF11</string>
+</dict>
+</plist>
